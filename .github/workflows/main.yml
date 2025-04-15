@@ -15,12 +15,12 @@ jobs:
 
       - name: Send JSON to Temperature Sensor
         run: |
-          curl -X POST "https://your-temperature-api-url.com" \
+          curl -X POST "https://:3YtvvzJZRr68Yy6QJqUfcA@eu.tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:F2CN6tAXT4-wY0mtqEmWdw/streams/AQAAAPcTAmD6B0clkzsc_0jIanoAAAAA" \
                -H "Content-Type: application/json" \
                -d @stream.json
 
       - name: Send JSON to Humidity Sensor
         run: |
-          curl -X POST "https://your-humidity-api-url.com" \
+          curl -X POST "https://:V0Hc5gm5ScaUjGw9xlVlQA@eu.tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:F2CN6tAXT4-wY0mtqEmWdw/streams/AQAAAFddOs2X-0I_k3sb0cvGROsAAAAA" \
                -H "Content-Type: application/json" \
                -d @stream.json
